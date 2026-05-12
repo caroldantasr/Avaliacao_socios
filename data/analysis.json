@@ -1,0 +1,1941 @@
+{
+  "diego": {
+    "name": "diego",
+    "n": 5,
+    "overall": 4.428571428571429,
+    "perQuestion": [
+      {
+        "q": 1,
+        "label": "Orientações claras",
+        "avg": 4,
+        "vals": [
+          5,
+          3,
+          4,
+          5,
+          3
+        ]
+      },
+      {
+        "q": 2,
+        "label": "Define prioridades",
+        "avg": 4.6,
+        "vals": [
+          5,
+          5,
+          4,
+          5,
+          4
+        ]
+      },
+      {
+        "q": 3,
+        "label": "Evita mudanças sem justificativa",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 4,
+        "label": "Acessível quando necessário",
+        "avg": 3.2,
+        "vals": [
+          4,
+          1,
+          4,
+          5,
+          2
+        ]
+      },
+      {
+        "q": 5,
+        "label": "Resolve dúvidas com rapidez",
+        "avg": 3.4,
+        "vals": [
+          5,
+          2,
+          3,
+          5,
+          2
+        ]
+      },
+      {
+        "q": 6,
+        "label": "Suporte em situações críticas",
+        "avg": 3.8,
+        "vals": [
+          5,
+          1,
+          5,
+          5,
+          3
+        ]
+      },
+      {
+        "q": 7,
+        "label": "Coerência orientações/práticas",
+        "avg": 4.8,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          4
+        ]
+      },
+      {
+        "q": 8,
+        "label": "Evita retrabalho",
+        "avg": 4.8,
+        "vals": [
+          5,
+          4,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 9,
+        "label": "Cumpre prazos/retornos",
+        "avg": 4,
+        "vals": [
+          5,
+          3,
+          4,
+          5,
+          3
+        ]
+      },
+      {
+        "q": 10,
+        "label": "Facilita execução",
+        "avg": 4.2,
+        "vals": [
+          5,
+          3,
+          4,
+          5,
+          4
+        ]
+      },
+      {
+        "q": 11,
+        "label": "Evita complexidade desnecessária",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 12,
+        "label": "Eleva padrão técnico",
+        "avg": 4.2,
+        "vals": [
+          5,
+          3,
+          4,
+          5,
+          4
+        ]
+      },
+      {
+        "q": 13,
+        "label": "Comunicação clara e direta",
+        "avg": 4.4,
+        "vals": [
+          5,
+          4,
+          5,
+          5,
+          3
+        ]
+      },
+      {
+        "q": 14,
+        "label": "Feedbacks úteis e acionáveis",
+        "avg": 4.8,
+        "vals": [
+          5,
+          4,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 15,
+        "label": "Postura respeitosa/profissional",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 16,
+        "label": "Registra no DataJuri",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 17,
+        "label": "Evita canais informais",
+        "avg": 4.4,
+        "vals": [
+          5,
+          3,
+          4,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 18,
+        "label": "Usa sistema p/ gestão",
+        "avg": 4.6,
+        "vals": [
+          5,
+          3,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 19,
+        "label": "Direciona uso de IA",
+        "avg": 4.6,
+        "vals": [
+          4,
+          5,
+          5,
+          5,
+          4
+        ]
+      },
+      {
+        "q": 20,
+        "label": "Corrige uso inadequado de IA",
+        "avg": 4.4,
+        "vals": [
+          4,
+          5,
+          5,
+          5,
+          3
+        ]
+      },
+      {
+        "q": 21,
+        "label": "Aplica IA como referência",
+        "avg": 4.8,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          4
+        ]
+      }
+    ],
+    "perCategory": {
+      "Clareza & Direção": 4.533333333333333,
+      "Disponibilidade": 3.4666666666666663,
+      "Coerência & Execução": 4.5600000000000005,
+      "Liderança & Comunicação": 4.6000000000000005,
+      "Processos & Sistema": 4.666666666666667,
+      "Cultura IA": 4.6000000000000005
+    },
+    "forces": [
+      "Objetividade ",
+      "Flexibilidade com entregas. Incentiva a autonomia e é compreensível.",
+      "Autônomo proporcionada",
+      "Pensamento jurídico amplo, ética de trabalho e disciplina consistentes e raciocínio lógico preciso.",
+      "Autonomia na execução do trabalho, favorecendo iniciativa e crescimento. "
+    ],
+    "weaknesses": [
+      "Tempo",
+      "A comunicação é difícil. Pouquíssima disponibilidade e acessibilidade (tanto pessoalmente quanto por e-mail e whatsapp), principalmente para tirar dúvidas e alinhar previamente atividades. ",
+      "Às vezes há uma insistência excessiva em processos e petições que, na prática, não se mostram viáveis nem trazem solução efetiva.",
+      "ausência de disponibilidade em alguns momentos. ",
+      "Falhas na comunicação interna."
+    ],
+    "advice": [
+      "Dispor de um horário mínimo predefinido por semana para se fazer disponível e/ou manter algum canal de comunicação ativa para facilitar o acesso quando necessário. Mais direcionamento em demandas de risco e demandas \"sem saída\" também seria bom. Apesar de prezar o incentivo à autonomia, nem sempre conseguiremos achar a \"melhor solução\" para entregar pronta (às vezes não tem nenhuma solução viável sequer). ",
+      "Como sugestão, talvez olhar com mais calma a viabilidade antes de insistir em alguns caminhos e também abrir mais espaço para ouvir dúvidas e trocar ideias sobre os casos.",
+      "Facilitar a comunicação. ",
+      "Aprimorar a comunicação para garantir mais clareza, alinhamento e eficiência nas atividades."
+    ]
+  },
+  "olavo": {
+    "name": "olavo",
+    "n": 4,
+    "overall": 3.9285714285714284,
+    "perQuestion": [
+      {
+        "q": 1,
+        "label": "Orientações claras",
+        "avg": 4.25,
+        "vals": [
+          5,
+          5,
+          4,
+          3
+        ]
+      },
+      {
+        "q": 2,
+        "label": "Define prioridades",
+        "avg": 4,
+        "vals": [
+          5,
+          5,
+          4,
+          2
+        ]
+      },
+      {
+        "q": 3,
+        "label": "Evita mudanças sem justificativa",
+        "avg": 4.75,
+        "vals": [
+          5,
+          5,
+          4,
+          5
+        ]
+      },
+      {
+        "q": 4,
+        "label": "Acessível quando necessário",
+        "avg": 4.25,
+        "vals": [
+          5,
+          4,
+          3,
+          5
+        ]
+      },
+      {
+        "q": 5,
+        "label": "Resolve dúvidas com rapidez",
+        "avg": 4.5,
+        "vals": [
+          5,
+          5,
+          3,
+          5
+        ]
+      },
+      {
+        "q": 6,
+        "label": "Suporte em situações críticas",
+        "avg": 4.25,
+        "vals": [
+          4,
+          5,
+          4,
+          4
+        ]
+      },
+      {
+        "q": 7,
+        "label": "Coerência orientações/práticas",
+        "avg": 4.25,
+        "vals": [
+          5,
+          5,
+          4,
+          3
+        ]
+      },
+      {
+        "q": 8,
+        "label": "Evita retrabalho",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 9,
+        "label": "Cumpre prazos/retornos",
+        "avg": 4.75,
+        "vals": [
+          5,
+          5,
+          4,
+          5
+        ]
+      },
+      {
+        "q": 10,
+        "label": "Facilita execução",
+        "avg": 4.25,
+        "vals": [
+          4,
+          5,
+          4,
+          4
+        ]
+      },
+      {
+        "q": 11,
+        "label": "Evita complexidade desnecessária",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 12,
+        "label": "Eleva padrão técnico",
+        "avg": 4,
+        "vals": [
+          4,
+          5,
+          4,
+          3
+        ]
+      },
+      {
+        "q": 13,
+        "label": "Comunicação clara e direta",
+        "avg": 4.25,
+        "vals": [
+          5,
+          5,
+          4,
+          3
+        ]
+      },
+      {
+        "q": 14,
+        "label": "Feedbacks úteis e acionáveis",
+        "avg": 4.5,
+        "vals": [
+          5,
+          5,
+          5,
+          3
+        ]
+      },
+      {
+        "q": 15,
+        "label": "Postura respeitosa/profissional",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 16,
+        "label": "Registra no DataJuri",
+        "avg": 2,
+        "vals": [
+          1,
+          3,
+          3,
+          1
+        ]
+      },
+      {
+        "q": 17,
+        "label": "Evita canais informais",
+        "avg": 1.5,
+        "vals": [
+          1,
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "q": 18,
+        "label": "Usa sistema p/ gestão",
+        "avg": 2.25,
+        "vals": [
+          1,
+          3,
+          3,
+          2
+        ]
+      },
+      {
+        "q": 19,
+        "label": "Direciona uso de IA",
+        "avg": 3.25,
+        "vals": [
+          3,
+          4,
+          3,
+          3
+        ]
+      },
+      {
+        "q": 20,
+        "label": "Corrige uso inadequado de IA",
+        "avg": 3.5,
+        "vals": [
+          3,
+          5,
+          4,
+          2
+        ]
+      },
+      {
+        "q": 21,
+        "label": "Aplica IA como referência",
+        "avg": 3,
+        "vals": [
+          2,
+          4,
+          3,
+          3
+        ]
+      }
+    ],
+    "perCategory": {
+      "Clareza & Direção": 4.333333333333333,
+      "Disponibilidade": 4.333333333333333,
+      "Coerência & Execução": 4.65,
+      "Liderança & Comunicação": 4.4375,
+      "Processos & Sistema": 1.9166666666666667,
+      "Cultura IA": 3.25
+    },
+    "forces": [
+      "Acessibilidade, clareza na comunicação, flexibilidade, inteligência/capacidade crítica e mindset estratégico",
+      "Criatividade na resolução de casos jurídicos e segurança na tomada de decisão. ",
+      "Como principal força, destaca-se a disponibilidade para trocas e debates, aliada à autonomia que proporciona na condução dos casos.",
+      "Flexibilidade na condução das atividades"
+    ],
+    "weaknesses": [
+      "Não faz uso do datajuri, o que demanda atenção redobrada com a organização de prazos e entregas, embora seja bastante flexível",
+      "Falta de formalização de atividades no sistema.",
+      "Dificuldade de usar o sistema do escritório ",
+      "Falta de formalização adequada no sistema DataJuri"
+    ],
+    "advice": [
+      "Registrar as demandas no datajuri.",
+      "Cadastrar atividades no datajuri. ",
+      "Tentar usar mais o sistema",
+      "Padronizar e reforçar o registro das informações no DataJuri, para garantir organização, rastreabilidade e segurança dos dados."
+    ]
+  },
+  "leonardo": {
+    "name": "leonardo",
+    "n": 5,
+    "overall": 4.628571428571429,
+    "perQuestion": [
+      {
+        "q": 1,
+        "label": "Orientações claras",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 2,
+        "label": "Define prioridades",
+        "avg": 4.8,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          4
+        ]
+      },
+      {
+        "q": 3,
+        "label": "Evita mudanças sem justificativa",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 4,
+        "label": "Acessível quando necessário",
+        "avg": 4.2,
+        "vals": [
+          4,
+          4,
+          5,
+          3,
+          5
+        ]
+      },
+      {
+        "q": 5,
+        "label": "Resolve dúvidas com rapidez",
+        "avg": 4.6,
+        "vals": [
+          5,
+          4,
+          5,
+          4,
+          5
+        ]
+      },
+      {
+        "q": 6,
+        "label": "Suporte em situações críticas",
+        "avg": 4.4,
+        "vals": [
+          5,
+          4,
+          5,
+          3,
+          5
+        ]
+      },
+      {
+        "q": 7,
+        "label": "Coerência orientações/práticas",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 8,
+        "label": "Evita retrabalho",
+        "avg": 4.8,
+        "vals": [
+          5,
+          5,
+          5,
+          4,
+          5
+        ]
+      },
+      {
+        "q": 9,
+        "label": "Cumpre prazos/retornos",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 10,
+        "label": "Facilita execução",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 11,
+        "label": "Evita complexidade desnecessária",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 12,
+        "label": "Eleva padrão técnico",
+        "avg": 4.2,
+        "vals": [
+          5,
+          3,
+          5,
+          4,
+          4
+        ]
+      },
+      {
+        "q": 13,
+        "label": "Comunicação clara e direta",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 14,
+        "label": "Feedbacks úteis e acionáveis",
+        "avg": 4.4,
+        "vals": [
+          5,
+          5,
+          5,
+          2,
+          5
+        ]
+      },
+      {
+        "q": 15,
+        "label": "Postura respeitosa/profissional",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 16,
+        "label": "Registra no DataJuri",
+        "avg": 4.8,
+        "vals": [
+          5,
+          4,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 17,
+        "label": "Evita canais informais",
+        "avg": 4,
+        "vals": [
+          4,
+          3,
+          4,
+          5,
+          4
+        ]
+      },
+      {
+        "q": 18,
+        "label": "Usa sistema p/ gestão",
+        "avg": 4.6,
+        "vals": [
+          5,
+          4,
+          4,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 19,
+        "label": "Direciona uso de IA",
+        "avg": 4.2,
+        "vals": [
+          5,
+          5,
+          4,
+          3,
+          4
+        ]
+      },
+      {
+        "q": 20,
+        "label": "Corrige uso inadequado de IA",
+        "avg": 4.4,
+        "vals": [
+          5,
+          5,
+          5,
+          3,
+          4
+        ]
+      },
+      {
+        "q": 21,
+        "label": "Aplica IA como referência",
+        "avg": 3.8,
+        "vals": [
+          5,
+          4,
+          4,
+          3,
+          3
+        ]
+      }
+    ],
+    "perCategory": {
+      "Clareza & Direção": 4.933333333333334,
+      "Disponibilidade": 4.4,
+      "Coerência & Execução": 4.96,
+      "Liderança & Comunicação": 4.65,
+      "Processos & Sistema": 4.466666666666667,
+      "Cultura IA": 4.133333333333334
+    },
+    "forces": [
+      "Suporte e transparência ",
+      "Acessibilidade, flexibilidade, compreensão e troca.",
+      "Conhecimento de várias áreas jurídicas, facilidade no trato, disponível sempre que pode e flexível com as atividades. ",
+      "Flexibilidade e compreensão, respeitando o estilo individual de trabalho.",
+      "Empático e presente, guia com clareza e concede autonomia na medida certa."
+    ],
+    "weaknesses": [
+      "Alinhamento com clientes (principalmente a Masterop) e distribuição das audiências",
+      "Ausência de programação de algumas atividades pontuais. ",
+      "Tendência a evitar feedbacks mais diretos, o que pode limitar o desenvolvimento. ",
+      "Em caso de insatisfação tem comunicação pouco direta. "
+    ],
+    "advice": [
+      "Diversificar a distribuição das audiências para que um colaborador só não receba duas ou mais audiências em um mesmo dia com horários muito próximos. Alinhar expectativas e atualizações/feedbacks regularmente com a Masterop, uma vez que já houveram algumas situações de \"atrito\" e reclamações (problemas de comunicação, expectativas, etc) que poderiam ser evitadas para o bem-estar da relação cliente-equipe.",
+      "Formalizar atividades do datajuri. ",
+      "Equilibrar a compreensão com feedbacks mais construtivos, visando o crescimento contínuo da equipe. ",
+      "Ser mais direto em suas avaliações negativas, correções e insatisfações com os advogados e estagiários. "
+    ]
+  },
+  "felipe": {
+    "name": "felipe",
+    "n": 5,
+    "overall": 4.571428571428571,
+    "perQuestion": [
+      {
+        "q": 1,
+        "label": "Orientações claras",
+        "avg": 4.8,
+        "vals": [
+          5,
+          5,
+          5,
+          4,
+          5
+        ]
+      },
+      {
+        "q": 2,
+        "label": "Define prioridades",
+        "avg": 4,
+        "vals": [
+          5,
+          3,
+          5,
+          4,
+          3
+        ]
+      },
+      {
+        "q": 3,
+        "label": "Evita mudanças sem justificativa",
+        "avg": 3.6,
+        "vals": [
+          4,
+          4,
+          5,
+          3,
+          2
+        ]
+      },
+      {
+        "q": 4,
+        "label": "Acessível quando necessário",
+        "avg": 4.8,
+        "vals": [
+          5,
+          5,
+          5,
+          4,
+          5
+        ]
+      },
+      {
+        "q": 5,
+        "label": "Resolve dúvidas com rapidez",
+        "avg": 4.8,
+        "vals": [
+          5,
+          5,
+          5,
+          4,
+          5
+        ]
+      },
+      {
+        "q": 6,
+        "label": "Suporte em situações críticas",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 7,
+        "label": "Coerência orientações/práticas",
+        "avg": 4.4,
+        "vals": [
+          4,
+          5,
+          5,
+          3,
+          5
+        ]
+      },
+      {
+        "q": 8,
+        "label": "Evita retrabalho",
+        "avg": 3.2,
+        "vals": [
+          4,
+          3,
+          5,
+          3,
+          1
+        ]
+      },
+      {
+        "q": 9,
+        "label": "Cumpre prazos/retornos",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 10,
+        "label": "Facilita execução",
+        "avg": 3.8,
+        "vals": [
+          5,
+          4,
+          4,
+          4,
+          2
+        ]
+      },
+      {
+        "q": 11,
+        "label": "Evita complexidade desnecessária",
+        "avg": 3,
+        "vals": [
+          4,
+          3,
+          4,
+          3,
+          1
+        ]
+      },
+      {
+        "q": 12,
+        "label": "Eleva padrão técnico",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 13,
+        "label": "Comunicação clara e direta",
+        "avg": 4.8,
+        "vals": [
+          5,
+          5,
+          5,
+          4,
+          5
+        ]
+      },
+      {
+        "q": 14,
+        "label": "Feedbacks úteis e acionáveis",
+        "avg": 4.8,
+        "vals": [
+          5,
+          5,
+          5,
+          4,
+          5
+        ]
+      },
+      {
+        "q": 15,
+        "label": "Postura respeitosa/profissional",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 16,
+        "label": "Registra no DataJuri",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 17,
+        "label": "Evita canais informais",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 18,
+        "label": "Usa sistema p/ gestão",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 19,
+        "label": "Direciona uso de IA",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 20,
+        "label": "Corrige uso inadequado de IA",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 21,
+        "label": "Aplica IA como referência",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      }
+    ],
+    "perCategory": {
+      "Clareza & Direção": 4.133333333333334,
+      "Disponibilidade": 4.866666666666666,
+      "Coerência & Execução": 3.8800000000000003,
+      "Liderança & Comunicação": 4.9,
+      "Processos & Sistema": 5,
+      "Cultura IA": 5
+    },
+    "forces": [
+      "Interação entre argumentação e utilização da IA (muitas ideias)",
+      "Trabalhar com o Felipe me desafia a elevar minha atuação todos os dias. Inteligência e atenção aos detalhes ímpar. Paciência para ensinar e acessibilidade para tirar dúvidas e direcionamentos, bem como correções e feedbacks. Excelente liderança. Se preocupa em inovar sempre e é muito aberto para sugestões de aprimoramento de ferramentas/rotina.",
+      "Raciocínio lógico-jurídico preciso, ética e metodologia de trabalho consistente e pensamento estruturado. ",
+      "Disponibilidade e paciência",
+      "Atenção, prestatividade e paciência, aliadas a feedbacks constantes que impulsionam o crescimento profissional."
+    ],
+    "weaknesses": [
+      "Perfeccionismo ",
+      "Pouco flexível com entregas, principalmente considerando a proporcionalidade em relação ao nível de complexidade e expectativa exigidos e os prazos definidos para entrega das peças. A definição de prioridade às vezes desconsidera demandas dos outros sócios, gerando uma \"pressão\" no colaborador. ",
+      "Olhar mais fechado para formas de resolver problemas jurídicos.",
+      "Perfeccionismo",
+      "O nível de detalhamento pode, em alguns momentos, gerar necessidade de ajustes ou retrabalhos."
+    ],
+    "advice": [
+      "Ser um pouco mais flexível com prazos de entrega. Outro conselho seria considerar as demandas dos outros sócios (já agendadas) ao distribuir as atividades.",
+      "Abordar outros meios de solução dos casos. ",
+      "Buscar maior flexibilidade na priorização das próprias demandas, considerando as demandas repassadas pelos demais sócios.",
+      "Buscar maior alinhamento e objetividade nas definições para reduzir retrabalhos e otimizar o fluxo das atividades."
+    ]
+  },
+  "bernardo": {
+    "name": "bernardo",
+    "n": 1,
+    "overall": 4.333333333333333,
+    "perQuestion": [
+      {
+        "q": 1,
+        "label": "Orientações claras",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 2,
+        "label": "Define prioridades",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 3,
+        "label": "Evita mudanças sem justificativa",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 4,
+        "label": "Acessível quando necessário",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 5,
+        "label": "Resolve dúvidas com rapidez",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 6,
+        "label": "Suporte em situações críticas",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 7,
+        "label": "Coerência orientações/práticas",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 8,
+        "label": "Evita retrabalho",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 9,
+        "label": "Cumpre prazos/retornos",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 10,
+        "label": "Facilita execução",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 11,
+        "label": "Evita complexidade desnecessária",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 12,
+        "label": "Eleva padrão técnico",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 13,
+        "label": "Comunicação clara e direta",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 14,
+        "label": "Feedbacks úteis e acionáveis",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 15,
+        "label": "Postura respeitosa/profissional",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 16,
+        "label": "Registra no DataJuri",
+        "avg": 1,
+        "vals": [
+          1
+        ]
+      },
+      {
+        "q": 17,
+        "label": "Evita canais informais",
+        "avg": 1,
+        "vals": [
+          1
+        ]
+      },
+      {
+        "q": 18,
+        "label": "Usa sistema p/ gestão",
+        "avg": 1,
+        "vals": [
+          1
+        ]
+      },
+      {
+        "q": 19,
+        "label": "Direciona uso de IA",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 20,
+        "label": "Corrige uso inadequado de IA",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 21,
+        "label": "Aplica IA como referência",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      }
+    ],
+    "perCategory": {
+      "Clareza & Direção": 5,
+      "Disponibilidade": 5,
+      "Coerência & Execução": 5,
+      "Liderança & Comunicação": 5,
+      "Processos & Sistema": 1,
+      "Cultura IA": 4.333333333333333
+    },
+    "forces": [
+      "Acessibilidade, cordialidade, flexibilidade, compreensão (empatia), excelente liderança e posicionamento. Valoriza a autonomia e me passa confiança na minha capacidade de executar atividades."
+    ],
+    "weaknesses": [
+      "Único ponto a melhorar seria o cadastro das demandas no datajuri."
+    ],
+    "advice": [
+      "Cadastrar as demandas no datajuri (facilita a organização dos prazos). Fora isso, excelente conduta. Gostaria de trabalhar mais com ele, inclusive."
+    ]
+  },
+  "bruno": {
+    "name": "bruno",
+    "n": 1,
+    "overall": 3.761904761904762,
+    "perQuestion": [
+      {
+        "q": 1,
+        "label": "Orientações claras",
+        "avg": 4,
+        "vals": [
+          4
+        ]
+      },
+      {
+        "q": 2,
+        "label": "Define prioridades",
+        "avg": 4,
+        "vals": [
+          4
+        ]
+      },
+      {
+        "q": 3,
+        "label": "Evita mudanças sem justificativa",
+        "avg": 4,
+        "vals": [
+          4
+        ]
+      },
+      {
+        "q": 4,
+        "label": "Acessível quando necessário",
+        "avg": 4,
+        "vals": [
+          4
+        ]
+      },
+      {
+        "q": 5,
+        "label": "Resolve dúvidas com rapidez",
+        "avg": 4,
+        "vals": [
+          4
+        ]
+      },
+      {
+        "q": 6,
+        "label": "Suporte em situações críticas",
+        "avg": 4,
+        "vals": [
+          4
+        ]
+      },
+      {
+        "q": 7,
+        "label": "Coerência orientações/práticas",
+        "avg": 4,
+        "vals": [
+          4
+        ]
+      },
+      {
+        "q": 8,
+        "label": "Evita retrabalho",
+        "avg": 4,
+        "vals": [
+          4
+        ]
+      },
+      {
+        "q": 9,
+        "label": "Cumpre prazos/retornos",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 10,
+        "label": "Facilita execução",
+        "avg": 4,
+        "vals": [
+          4
+        ]
+      },
+      {
+        "q": 11,
+        "label": "Evita complexidade desnecessária",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 12,
+        "label": "Eleva padrão técnico",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 13,
+        "label": "Comunicação clara e direta",
+        "avg": 4,
+        "vals": [
+          4
+        ]
+      },
+      {
+        "q": 14,
+        "label": "Feedbacks úteis e acionáveis",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 15,
+        "label": "Postura respeitosa/profissional",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 16,
+        "label": "Registra no DataJuri",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 17,
+        "label": "Evita canais informais",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 18,
+        "label": "Usa sistema p/ gestão",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 19,
+        "label": "Direciona uso de IA",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 20,
+        "label": "Corrige uso inadequado de IA",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 21,
+        "label": "Aplica IA como referência",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      }
+    ],
+    "perCategory": {
+      "Clareza & Direção": 4,
+      "Disponibilidade": 4,
+      "Coerência & Execução": 3.6,
+      "Liderança & Comunicação": 4.75,
+      "Processos & Sistema": 3,
+      "Cultura IA": 3
+    },
+    "forces": [
+      "Disponibilidade "
+    ],
+    "weaknesses": [
+      "Informalidade nas solcitações "
+    ],
+    "advice": [
+      "Usar mais o Datajuri no cadastro e acompanhamento das atividades"
+    ]
+  },
+  "cid": {
+    "name": "cid",
+    "n": 1,
+    "overall": 3.1904761904761907,
+    "perQuestion": [
+      {
+        "q": 1,
+        "label": "Orientações claras",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 2,
+        "label": "Define prioridades",
+        "avg": 4,
+        "vals": [
+          4
+        ]
+      },
+      {
+        "q": 3,
+        "label": "Evita mudanças sem justificativa",
+        "avg": 4,
+        "vals": [
+          4
+        ]
+      },
+      {
+        "q": 4,
+        "label": "Acessível quando necessário",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 5,
+        "label": "Resolve dúvidas com rapidez",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 6,
+        "label": "Suporte em situações críticas",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 7,
+        "label": "Coerência orientações/práticas",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 8,
+        "label": "Evita retrabalho",
+        "avg": 1,
+        "vals": [
+          1
+        ]
+      },
+      {
+        "q": 9,
+        "label": "Cumpre prazos/retornos",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 10,
+        "label": "Facilita execução",
+        "avg": 2,
+        "vals": [
+          2
+        ]
+      },
+      {
+        "q": 11,
+        "label": "Evita complexidade desnecessária",
+        "avg": 2,
+        "vals": [
+          2
+        ]
+      },
+      {
+        "q": 12,
+        "label": "Eleva padrão técnico",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 13,
+        "label": "Comunicação clara e direta",
+        "avg": 5,
+        "vals": [
+          5
+        ]
+      },
+      {
+        "q": 14,
+        "label": "Feedbacks úteis e acionáveis",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 15,
+        "label": "Postura respeitosa/profissional",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 16,
+        "label": "Registra no DataJuri",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 17,
+        "label": "Evita canais informais",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 18,
+        "label": "Usa sistema p/ gestão",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 19,
+        "label": "Direciona uso de IA",
+        "avg": 1,
+        "vals": [
+          1
+        ]
+      },
+      {
+        "q": 20,
+        "label": "Corrige uso inadequado de IA",
+        "avg": 3,
+        "vals": [
+          3
+        ]
+      },
+      {
+        "q": 21,
+        "label": "Aplica IA como referência",
+        "avg": 1,
+        "vals": [
+          1
+        ]
+      }
+    ],
+    "perCategory": {
+      "Clareza & Direção": 3.6666666666666665,
+      "Disponibilidade": 5,
+      "Coerência & Execução": 2.6,
+      "Liderança & Comunicação": 3.5,
+      "Processos & Sistema": 3,
+      "Cultura IA": 1.6666666666666667
+    },
+    "forces": [
+      "Acessibilidade, disponibilidade para alinhamento, feedbacks e críticas construtivas."
+    ],
+    "weaknesses": [
+      "Falta cordialidade às vezes. Os comandos devem ser alinhados ou expostos de forma mais clara quanto à objetivo, requisitos e expectativa para evitar correções constantes e retrabalho. Algumas pequenas demandas (\"favores\") que poderiam ser evitadas, quando constantes, atrapalham a fluidez na execução das demais tarefas."
+    ],
+    "advice": [
+      "Dar mais clareza nos comandos ao alinhar as demandas. Evitar a prática de pedidos fora do datajuri (prejudica a organização dos prazos e pode gerar prejuízos). Já aconteceu algumas vezes de atividades não aparecerem no calendário do datajuri, apenas na lista, o que provavelmente denota alguma falha no cadastro que pode ser remediada."
+    ]
+  },
+  "victor": {
+    "name": "victor",
+    "n": 3,
+    "overall": 4.142857142857143,
+    "perQuestion": [
+      {
+        "q": 1,
+        "label": "Orientações claras",
+        "avg": 4,
+        "vals": [
+          5,
+          5,
+          2
+        ]
+      },
+      {
+        "q": 2,
+        "label": "Define prioridades",
+        "avg": 3.6666666666666665,
+        "vals": [
+          5,
+          5,
+          1
+        ]
+      },
+      {
+        "q": 3,
+        "label": "Evita mudanças sem justificativa",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 4,
+        "label": "Acessível quando necessário",
+        "avg": 4.333333333333333,
+        "vals": [
+          4,
+          5,
+          4
+        ]
+      },
+      {
+        "q": 5,
+        "label": "Resolve dúvidas com rapidez",
+        "avg": 4,
+        "vals": [
+          4,
+          5,
+          3
+        ]
+      },
+      {
+        "q": 6,
+        "label": "Suporte em situações críticas",
+        "avg": 4.333333333333333,
+        "vals": [
+          5,
+          5,
+          3
+        ]
+      },
+      {
+        "q": 7,
+        "label": "Coerência orientações/práticas",
+        "avg": 4.333333333333333,
+        "vals": [
+          5,
+          4,
+          4
+        ]
+      },
+      {
+        "q": 8,
+        "label": "Evita retrabalho",
+        "avg": 4.666666666666667,
+        "vals": [
+          5,
+          4,
+          5
+        ]
+      },
+      {
+        "q": 9,
+        "label": "Cumpre prazos/retornos",
+        "avg": 4.666666666666667,
+        "vals": [
+          5,
+          4,
+          5
+        ]
+      },
+      {
+        "q": 10,
+        "label": "Facilita execução",
+        "avg": 3.6666666666666665,
+        "vals": [
+          4,
+          4,
+          3
+        ]
+      },
+      {
+        "q": 11,
+        "label": "Evita complexidade desnecessária",
+        "avg": 4.333333333333333,
+        "vals": [
+          4,
+          4,
+          5
+        ]
+      },
+      {
+        "q": 12,
+        "label": "Eleva padrão técnico",
+        "avg": 3.3333333333333335,
+        "vals": [
+          4,
+          4,
+          2
+        ]
+      },
+      {
+        "q": 13,
+        "label": "Comunicação clara e direta",
+        "avg": 4.333333333333333,
+        "vals": [
+          5,
+          5,
+          3
+        ]
+      },
+      {
+        "q": 14,
+        "label": "Feedbacks úteis e acionáveis",
+        "avg": 4,
+        "vals": [
+          5,
+          5,
+          2
+        ]
+      },
+      {
+        "q": 15,
+        "label": "Postura respeitosa/profissional",
+        "avg": 5,
+        "vals": [
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 16,
+        "label": "Registra no DataJuri",
+        "avg": 4.333333333333333,
+        "vals": [
+          3,
+          5,
+          5
+        ]
+      },
+      {
+        "q": 17,
+        "label": "Evita canais informais",
+        "avg": 4.333333333333333,
+        "vals": [
+          5,
+          3,
+          5
+        ]
+      },
+      {
+        "q": 18,
+        "label": "Usa sistema p/ gestão",
+        "avg": 4,
+        "vals": [
+          4,
+          5,
+          3
+        ]
+      },
+      {
+        "q": 19,
+        "label": "Direciona uso de IA",
+        "avg": 3.6666666666666665,
+        "vals": [
+          5,
+          3,
+          3
+        ]
+      },
+      {
+        "q": 20,
+        "label": "Corrige uso inadequado de IA",
+        "avg": 3.6666666666666665,
+        "vals": [
+          5,
+          3,
+          3
+        ]
+      },
+      {
+        "q": 21,
+        "label": "Aplica IA como referência",
+        "avg": 3.3333333333333335,
+        "vals": [
+          5,
+          3,
+          2
+        ]
+      }
+    ],
+    "perCategory": {
+      "Clareza & Direção": 4.222222222222222,
+      "Disponibilidade": 4.222222222222221,
+      "Coerência & Execução": 4.333333333333334,
+      "Liderança & Comunicação": 4.166666666666666,
+      "Processos & Sistema": 4.222222222222222,
+      "Cultura IA": 3.5555555555555554
+    },
+    "forces": [
+      "Objetivo",
+      "Extrema disponibilidade",
+      "Inteligência e conteúdo"
+    ],
+    "weaknesses": [
+      "Nao cadastra as atividades de forma correta, não aparece no calendário ",
+      "Pedir diligências em excesso - dentro do fluxo do escritório fica pesado.  ",
+      "Registro das atividades como compromisso, sem refletir adequadamente no calendário, o que dificulta a visualização e o acompanhamento no dia a dia."
+    ],
+    "advice": [
+      "Melhorar uso do Datajuri - no cadastramento das atividades de diligência ",
+      "\nPadronizar o cadastro das atividades como tarefa ou prazo, de forma que sejam corretamente lançadas no calendário, facilitando a organização, o controle de prazos e a rotina operacional."
+    ]
+  }
+}

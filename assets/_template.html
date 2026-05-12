@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>__TITLE__ · DOLF 2026.1</title>
+<link rel="stylesheet" href="assets/deck.css">
+<script type="application/json" id="speaker-notes">[]</script>
+</head>
+<body>
+<deck-stage width="1920" height="1080" id="stage"></deck-stage>
+<script src="assets/charts.js?v=3"></script>
+<script src="assets/analysis.js?v=3"></script>
+<script src="assets/data.js?v=3"></script>
+<script src="assets/builder.js?v=3"></script>
+<script>
+  const slug = '__SLUG__';
+  document.getElementById('stage').innerHTML = DOLF.buildDeck(slug);
+</script>
+<script src="assets/deck-stage.js"></script>
+</body>
+</html>
