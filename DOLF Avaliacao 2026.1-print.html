@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Avaliação 2026.1 · DOLF Advogados</title>
+<link rel="stylesheet" href="assets/deck.css?v=10">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  body { background: var(--paper); padding: 0; min-height: 100vh; position: relative; }
+
+  /* === Page-level DOLF watermark === */
+  .page-watermark {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page-watermark img {
+    width: min(58vw, 900px);
+    opacity: 0.045;
+    filter: grayscale(1) contrast(1.05);
+  }
+
+  /* Container above watermark */
+  .masthead, .body-inner { position: relative; z-index: 1; }
+
+  /* === Masthead — typographic letterhead === */
+  .masthead {
+    padding: 56px 100px 32px;
+    border-bottom: 1px solid var(--rule);
+    position: relative;
+    background: transparent;
+  }
+  .masthead-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-bottom: 28px; margin-bottom: 56px;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .masthead-mark {
+    display: flex; align-items: baseline; gap: 0;
+  }
+  .masthead-mark .wordmark {
+    font-family: 'Cormorant Garamond', 'Cormorant', var(--serif);
+    font-weight: 400;
+    font-size: 38px; letter-spacing: 0.32em;
+    color: var(--ink); line-height: 1;
+    padding-right: 6px;
+  }
+  .masthead-mark .label {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.32em;
+    color: var(--ink-mute); font-weight: 500;
+    border-left: 1px solid var(--rule);
+    padding-left: 18px; margin-left: 18px;
+    text-transform: uppercase;
+  }
+  .masthead-meta {
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--ink-mute); font-weight: 500;
+    text-align: right;
+  }
+
+  .body-inner { padding: 0 100px 100px; }
+
+  .head { margin-bottom: 72px; max-width: 1100px; }
+  .head .kind {
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--ink-mute); margin-bottom: 24px;
+  }
+  .head h1 {
+    font-family: var(--serif); font-weight: 500;
+    font-variation-settings: 'opsz' 144, 'SOFT' 100;
+    font-size: 112px;
+    line-height: 0.98; letter-spacing: -0.022em; margin: 0 0 28px;
+  }
+  .head h1 em { font-style: italic; color: var(--gold); font-weight: 500; }
+  .head .sub {
+    font-family: var(--serif); font-style: italic; font-weight: 500;
+    font-size: 24px; color: var(--ink-soft);
+    line-height: 1.4; margin: 0; max-width: 820px;
+  }
+
+  .section-label {
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--ink-mute); padding-bottom: 14px;
+    border-bottom: 1px solid var(--rule); margin-bottom: 32px;
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .section-label .ix {
+    font-family: var(--serif); font-style: italic; font-size: 14px;
+    color: var(--ink-faint); text-transform: none; letter-spacing: 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--ink);
+    border-left: 1px solid var(--rule);
+    margin-bottom: 56px;
+    background: var(--paper);
+  }
+  .card {
+    padding: 0;
+    border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    display: flex; flex-direction: column;
+    text-decoration: none; color: inherit; cursor: pointer;
+    transition: background 0.18s;
+    background: var(--paper);
+    position: relative;
+  }
+  .card:hover { background: var(--ink); color: #fff8ef; }
+  .card:hover .name,
+  .card:hover .desc,
+  .card:hover .arch,
+  .card:hover .arrow,
+  .card:hover .foot,
+  .card:hover .score-num,
+  .card:hover .pf-label,
+  .card:hover .pf-text,
+  .card:hover .rank { color: inherit; }
+  .card:hover .foot { border-top-color: rgba(255,248,239,0.18); }
+  .card:hover .card-section { border-top-color: rgba(255,248,239,0.14); }
+  .card:hover .pf-mark { background: #fff8ef; }
+
+  /* Top band — just rank, clean */
+  .card .top-band {
+    padding: 22px 22px 0;
+    min-height: 28px;
+  }
+  .card .rank {
+    font-family: var(--mono); font-size: 10px;
+    letter-spacing: 0.26em; text-transform: uppercase;
+    color: var(--ink-mute); font-weight: 500;
+  }
+
+  /* Identity block */
+  .card .id-block {
+    padding: 8px 22px 16px;
+  }
+  .card .name {
+    font-family: var(--serif); font-size: 28px; line-height: 1.02;
+    margin: 0 0 6px; font-weight: 500; color: var(--ink);
+    letter-spacing: -0.005em;
+  }
+  .card .arch {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--ink-mute);
+    margin: 0; font-weight: 500;
+  }
+
+  /* Score band — centered */
+  .card .score-band {
+    padding: 18px 22px 20px;
+    border-top: 1px solid var(--rule-soft);
+    display: flex;
+    align-items: center; justify-content: center;
+  }
+  .card .score-num {
+    font-family: var(--serif); font-weight: 500;
+    font-variation-settings: 'opsz' 144, 'SOFT' 100;
+    font-size: 56px; line-height: 1; color: var(--gold);
+    letter-spacing: -0.025em;
+  }
+
+  /* Pontos forte / fraco — two stacked rows, equal weight */
+  .card .pf-row {
+    border-top: 1px solid var(--rule-soft);
+    display: flex; flex-direction: column;
+  }
+  .card .pf-item {
+    padding: 12px 22px;
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .card .pf-item + .pf-item {
+    border-top: 1px solid var(--rule-soft);
+  }
+  .card .pf-mark {
+    margin-top: 6px;
+    width: 14px; height: 1px;
+    background: var(--ink);
+  }
+  .card .pf-content { min-width: 0; }
+  .card .pf-label {
+    font-family: var(--mono); font-size: 8.5px; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--ink-mute);
+    font-weight: 500; margin: 0 0 3px;
+  }
+  .card .pf-text {
+    font-family: var(--serif); font-size: 14px; line-height: 1.3;
+    color: var(--ink); margin: 0; font-weight: 400;
+  }
+
+  .card .foot {
+    margin-top: auto;
+    padding: 12px 22px;
+    border-top: 1px solid var(--rule-soft);
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--ink-mute);
+  }
+  .card .foot .arrow { font-size: 13px; color: var(--ink); letter-spacing: 0; }
+
+  /* Decorative tile that breaks the rhythm — image inserts at slot 5 */
+  .card.tile {
+    padding: 0;
+    background: #0c0c0d;
+    overflow: hidden;
+  }
+  .card.tile img {
+    width: 100%; height: 100%; object-fit: cover;
+    filter: grayscale(1) contrast(1.08) brightness(0.88);
+    display: block;
+  }
+  .card.tile::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.7));
+    pointer-events: none;
+  }
+  .card.tile .tile-label {
+    position: absolute; left: 24px; right: 24px; bottom: 22px;
+    z-index: 2; pointer-events: none;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .card.tile .tile-label .l1 {
+    font-family: var(--serif); font-style: italic; font-size: 18px;
+    color: rgba(245,245,244,0.95); line-height: 1.2;
+  }
+  .card.tile .tile-label .l2 {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.22em;
+    color: rgba(245,245,244,0.65); text-transform: uppercase;
+  }
+
+  .compare-card {
+    display: block;
+    background: var(--ink); color: #fff8ef;
+    text-decoration: none;
+    border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink);
+    margin-bottom: 60px;
+    transition: background 0.18s;
+  }
+  .compare-card:hover { background: var(--gold); }
+  .compare-card .compare-text { padding: 44px 52px; display: flex; flex-direction: column; justify-content: space-between; min-height: 220px; }
+  .compare-card .label { font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,248,239,0.6); margin-bottom: 14px; }
+  .compare-card h2 { font-family: var(--serif); font-weight: 400; font-size: 48px; margin: 0 0 14px; line-height: 1.02; color: #fff8ef; }
+  .compare-card h2 em { font-style: italic; color: var(--gold-bright); }
+  .compare-card p { font-family: var(--serif); font-style: italic; font-size: 18px; color: rgba(255,248,239,0.85); max-width: 620px; line-height: 1.45; margin: 0 0 22px; }
+  .compare-card .arrow { font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,248,239,0.85); }
+  .compare-card .compare-image {
+    position: relative;
+    background: #14140f;
+    overflow: hidden;
+    min-height: 280px;
+  }
+  .compare-card .compare-image img {
+    width: 100%; height: 100%; object-fit: cover;
+    filter: grayscale(1) contrast(1.05) brightness(0.78);
+    display: block;
+  }
+
+  .footer {
+    margin-top: 60px; padding-top: 28px;
+    border-top: 1px solid var(--rule);
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--ink-mute);
+  }
+  .footer .firm { font-family: var(--serif); font-style: italic; font-size: 14px; letter-spacing: 0.04em; text-transform: none; color: var(--ink-soft); }
+
+  /* ============ PRINT ============ */
+  @page { size: A4 portrait; margin: 12mm 10mm; }
+  @media print {
+    html, body {
+      background: var(--paper) !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    *, *::before, *::after {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    .page-watermark { position: absolute; }
+    .page-watermark img { width: 70%; opacity: 0.045; }
+    .masthead { padding: 0 0 18px; border-bottom: 1px solid var(--rule); break-after: avoid; }
+    .masthead-row { padding-bottom: 14px; margin-bottom: 22px; }
+    .masthead-mark .wordmark { font-size: 26px; }
+    .masthead-mark .label, .masthead-meta { font-size: 8px; }
+    .body-inner { padding: 0; }
+    .head { margin-bottom: 28px; max-width: 100%; break-after: avoid; }
+    .head .kind { font-size: 8px; margin-bottom: 12px; }
+    .head h1 { font-size: 56px; margin: 0 0 14px; }
+    .head .sub { font-size: 13px; max-width: 100%; }
+    .section-label { font-size: 8px; padding-bottom: 8px; margin-bottom: 14px; break-after: avoid; }
+    .section-label .ix { font-size: 10px; }
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 22px;
+      break-inside: auto;
+    }
+    .card {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .card:hover { background: var(--paper); color: inherit; }
+    .card:hover .name, .card:hover .arch, .card:hover .arrow,
+    .card:hover .foot, .card:hover .score-num, .card:hover .pf-label,
+    .card:hover .pf-text, .card:hover .rank { color: revert; }
+    .card:hover .pf-mark { background: var(--ink); }
+    .card .top-band { padding: 12px 14px 0; min-height: 18px; }
+    .card .rank { font-size: 8px; }
+    .card .id-block { padding: 4px 14px 10px; }
+    .card .name { font-size: 18px; margin: 0 0 4px; }
+    .card .arch { font-size: 8px; }
+    .card .score-band { padding: 8px 14px 10px; }
+    .card .score-num { font-size: 32px; }
+    .card .pf-item { padding: 7px 14px; }
+    .card .pf-label { font-size: 7px; }
+    .card .pf-text { font-size: 10px; line-height: 1.28; }
+    .card .foot { padding: 7px 14px; font-size: 7.5px; }
+    .card .foot .arrow { font-size: 9px; }
+    .compare-card { margin-bottom: 22px; break-inside: avoid; }
+    .compare-card:hover { background: var(--ink); }
+    .compare-card .compare-text { padding: 20px 24px; min-height: 0; }
+    .compare-card .label { font-size: 8px; margin-bottom: 8px; }
+    .compare-card h2 { font-size: 24px; margin: 0 0 8px; }
+    .compare-card p { font-size: 12px; margin: 0 0 12px; }
+    .compare-card .arrow { font-size: 8px; }
+    .footer { margin-top: 22px; padding-top: 12px; font-size: 7px; break-inside: avoid; }
+    .footer .firm { font-size: 10px; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page-watermark"><img src="assets/dolf-logo.png" alt=""></div>
+
+<header class="masthead">
+  <div class="masthead-row">
+    <div class="masthead-mark">
+      <span class="wordmark">DOLF</span>
+      <span class="label">Avaliação 2026.1</span>
+    </div>
+    <div class="masthead-meta">Diagnóstico de Sócios · Documento Confidencial</div>
+  </div>
+  <div class="head">
+    <div class="left">
+      <div class="kind">Documento interno · Confidencial</div>
+      <h1>Diagnóstico de<br><em>desempenho</em></h1>
+      <p class="sub">Relatórios individuais por sócio, fundamentados em dados quantitativos e qualitativos. Cada avaliado é analisado por seus próprios pontos fortes e fracos.</p>
+    </div>
+  </div>
+</header>
+
+<main class="body-inner">
+
+<div class="section-label"><span>Relatórios individuais</span><span class="ix">oito sócios — oito perfis</span></div>
+<div class="grid" id="grid"></div>
+
+<a href="Comparativo.html" class="compare-card">
+  <div class="compare-text">
+    <div>
+      <div class="label">Camada complementar</div>
+      <h2>Visão <em>institucional</em></h2>
+      <p>Mapa cruzado das competências entre sócios, com leitura por bloco avaliativo, complementaridades e oportunidades de redistribuição de funções no escritório.</p>
+    </div>
+    <div class="arrow">Abrir comparativo →</div>
+  </div>
+</a>
+
+<div class="footer">
+  <div class="firm">DOLF Advogados</div>
+  <div>2026.1 · Diagnóstico individual</div>
+</div>
+
+</main>
+
+<script src="assets/charts.js?v=10"></script>
+<script src="assets/data.js?v=10"></script>
+<script>
+const order = ['diego','olavo','leonardo','felipe','bernardo','bruno','cid','victor']
+  .slice()
+  .sort((a, b) => (DOLF_DATA[b].overall - DOLF_DATA[a].overall));
+const fileMap = {
+  diego:'Diego Papini.html', olavo:'Olavo Bastos.html', leonardo:'Leonardo.html',
+  felipe:'Felipe Paraiso.html', bernardo:'Bernardo Cavalcante.html',
+  bruno:'Bruno Kiefer.html', cid:'Cid Calheiros.html', victor:'Victor Silva.html'
+};
+
+// Clean grid — score + pontos forte/fraco for at-a-glance reading
+const cleanTitle = (s) => s.replace(/\s*\([^)]*\)\s*/g, '').trim();
+const cards = order.map((slug, i) => {
+  const d = DOLF_DATA[slug];
+  const forte = d.forcas?.[0];
+  const fraco = d.fragilidades?.[0];
+  const rank = String(i+1).padStart(2,'0');
+  return `<a class="card" href="${fileMap[slug]}">
+    <div class="top-band">
+      <span class="rank">${rank}</span>
+    </div>
+    <div class="id-block">
+      <h3 class="name">${d.name}</h3>
+      <p class="arch">${d.archetype}</p>
+    </div>
+    <div class="score-band">
+      <span class="score-num">${d.overall.toFixed(2).replace('.',',')}</span>
+    </div>
+    <div class="pf-row">
+      <div class="pf-item">
+        <span class="pf-mark"></span>
+        <div class="pf-content">
+          <p class="pf-label">Ponto forte</p>
+          <p class="pf-text">${cleanTitle(forte?.t || '—')}</p>
+        </div>
+      </div>
+      <div class="pf-item">
+        <span class="pf-mark"></span>
+        <div class="pf-content">
+          <p class="pf-label">Ponto a desenvolver</p>
+          <p class="pf-text">${cleanTitle(fraco?.t || '—')}</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span>Relatório individual</span><span class="arrow">Abrir →</span></div>
+  </a>`;
+});
+
+document.getElementById('grid').innerHTML = cards.join('');
+
+// Auto-print once fonts & layout are ready
+(async () => {
+  try { if (document.fonts && document.fonts.ready) await document.fonts.ready; } catch(e){}
+  await new Promise(r => setTimeout(r, 600));
+  window.print();
+})();
+</script>
+</body>
+</html>

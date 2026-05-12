@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Comparativo · DOLF 2026.1</title>
+<link rel="stylesheet" href="assets/deck.css?v=10">
+</head>
+<body>
+<deck-stage width="1920" height="1080" id="stage"></deck-stage>
+<script src="assets/charts.js?v=10"></script>
+<script src="assets/analysis.js?v=10"></script>
+<script src="assets/data.js?v=10"></script>
+<script>
+const order = ['leonardo','felipe','diego','bernardo','victor','olavo','bruno','cid'];
+const cats = ['Clareza · Direção','Disponibilidade','Coerência · Execução','Liderança · Comunicação','Processos · Sistema','Cultura IA'];
+
+function row(slug) {
+  const d = DOLF_DATA[slug];
+  const cells = cats.map(c => {
+    const v = d.cats[c];
+    const cls = DOLF.band(v);
+    return `<td class="${cls}"><span>${v.toFixed(2)}</span></td>`;
+  }).join('');
+  return `<tr>
+    <th>${d.name}</th>
+    <td class="overall ${DOLF.band(d.overall)}"><strong>${d.overall.toFixed(2)}</strong></td>
+    ${cells}
+    <td class="arch">${d.archetype}</td>
+  </tr>`;
+}
+
+const matrix = `
+  <table class="matrix">
+    <thead><tr>
+      <th></th><th>Geral</th>
+      ${cats.map(c=>`<th>${c}</th>`).join('')}
+      <th>Arquétipo</th>
+    </tr></thead>
+    <tbody>${order.map(row).join('')}</tbody>
+  </table>`;
+
+const archetypes = order.map(slug => {
+  const d = DOLF_DATA[slug];
+  const v = DOLF.verdict(d.overall);
+  return `<div class="arch-card">
+    <div class="arch-head">
+      <span class="num">${d.overall.toFixed(2)}</span>
+      <span class="verdict ${v.cls}">${v.txt}</span>
+    </div>
+    <h3>${d.name}</h3>
+    <p class="arch-tag">${d.archetype}</p>
+    <p class="arch-desc">${d.archetypeDesc}</p>
+    <div class="arch-foot">
+      <div><span class="lbl">Forte</span><span class="val">${d.strongest} · ${d.cats[d.strongest].toFixed(2)}</span></div>
+      <div><span class="lbl">Frágil</span><span class="val">${d.weakest} · ${d.cats[d.weakest].toFixed(2)}</span></div>
+    </div>
+  </div>`;
+}).join('');
+
+const ranking = order.map((slug,i)=>{
+  const d = DOLF_DATA[slug];
+  const v = DOLF.verdict(d.overall);
+  return `<div class="rank-row">
+    <span class="r-pos">${String(i+1).padStart(2,'0')}</span>
+    <span class="r-name">${d.name}</span>
+    <span class="r-arch">${d.archetype}</span>
+    <span class="r-bar"><span class="r-fill ${DOLF.band(d.overall)}" style="width:${(d.overall/5)*100}%"></span></span>
+    <span class="r-val ${DOLF.band(d.overall)}">${d.overall.toFixed(2)}</span>
+    <span class="verdict ${v.cls}">${v.txt}</span>
+  </div>`;
+}).join('');
+
+const slides = [
+  // Cover
+  `<section data-screen-label="01 Capa"><div class="cover">
+    <div class="cover-band">
+      <div class="cover-mark">DOLF<span class="cover-mark-small">Avaliação 2026.1</span></div>
+      <div class="cover-meta">Análise comparativa</div>
+    </div>
+    <div class="cover-center">
+      <div class="ornament"></div>
+      <div class="deck-kind">Camada comparativa</div>
+      <h1>Oito <em>sócios</em></h1>
+      <div class="subtitle">Leitura cruzada das avaliações: arquétipos, blocos, ranking e oportunidades de redistribuição de funções.</div>
+    </div>
+    <div class="cover-bottom"><div>2026.1</div><div>01</div></div>
+  </div></section>`,
+
+  // Ranking
+  `<section data-screen-label="02 Ranking"><div class="slide">
+    <div class="chrome"><div class="left"><span>Comparativo</span><span class="rule"></span><span>Ranking</span></div><div>02</div></div>
+    <p class="eyebrow">02 · Ranking geral</p>
+    <h1 class="slide-title">Ordenação por média ponderada</h1>
+    <div class="ranking">${ranking}</div>
+    <div class="foot"><div>Escala 1–5 · 6 blocos × 21 indicadores</div><div>Acelerador · Sólido · Atenção · Gargalo</div></div>
+  </div></section>`,
+
+  // Matrix
+  `<section data-screen-label="03 Matriz"><div class="slide">
+    <div class="chrome"><div class="left"><span>Comparativo</span><span class="rule"></span><span>Matriz de blocos</span></div><div>03</div></div>
+    <p class="eyebrow">03 · Matriz de blocos</p>
+    <h1 class="slide-title">Quem é forte (e frágil) onde</h1>
+    ${matrix}
+    <div class="foot"><div>≥ 4,30 · 3,50–4,29 · 2,50–3,49 · &lt; 2,50</div><div>Comparativo</div></div>
+  </div></section>`,
+
+  // Archetypes
+  `<section data-screen-label="04 Arquétipos"><div class="slide warm">
+    <div class="chrome"><div class="left"><span>Comparativo</span><span class="rule"></span><span>Arquétipos</span></div><div>04</div></div>
+    <p class="eyebrow">04 · Arquétipos</p>
+    <h1 class="slide-title">Oito perfis funcionais</h1>
+    <div class="arch-grid">${archetypes}</div>
+    <div class="foot"><div>Cada sócio · um perfil funcional dominante</div><div>Comparativo</div></div>
+  </div></section>`,
+
+  // Complementarities — REMOVIDO
+  // Conflicts — REMOVIDO
+
+  // Distribution (renumerada como 05)
+  `<section data-screen-label="05 Distribuição"><div class="slide">
+    <div class="chrome"><div class="left"><span>Comparativo</span><span class="rule"></span><span>Redistribuição de funções</span></div><div>05</div></div>
+    <p class="eyebrow">05 · Sugestão de redistribuição</p>
+    <h1 class="slide-title">O que cada sócio deveria liderar</h1>
+    <div class="distrib">
+      <div class="dis-row"><div class="dis-who">Felipe Paraiso</div><div class="dis-what"><strong>Adoção de IA institucional.</strong> Único sócio com 5,00 em Cultura IA. Define playbook, treina pares, cria casos de uso replicáveis.</div></div>
+      <div class="dis-row"><div class="dis-who">Leonardo</div><div class="dis-what"><strong>Mentoria de liderança e onboarding.</strong> Maior média geral; cria o ambiente de segurança psicológica que o time precisa para crescer.</div></div>
+      <div class="dis-row"><div class="dis-who">Diego Papini</div><div class="dis-what"><strong>Profundidade técnica e teses complexas.</strong> Padrão técnico 5,00. Concentrar em casos que exigem densidade jurídica, não em volume.</div></div>
+      <div class="dis-row"><div class="dis-who">Bernardo Cavalcante</div><div class="dis-what"><strong>Formação humana e retenção.</strong> Único sócio com 5,00 em quatro blocos consecutivos. Mentor de carreira e clima.</div></div>
+      <div class="dis-row"><div class="dis-who">Olavo Bastos</div><div class="dis-what"><strong>Decisão estratégica e mentoria de mindset.</strong> Acessibilidade alta + criatividade jurídica. Concentrar em destrava de casos travados.</div></div>
+      <div class="dis-row"><div class="dis-who">Victor Silva</div><div class="dis-what"><strong>Estabilidade operacional.</strong> Avaliação consistente; bom em demandas que exigem previsibilidade e coerência.</div></div>
+      <div class="dis-row"><div class="dis-who">Bruno Kiefer</div><div class="dis-what"><strong>Padrão técnico e feedback formal.</strong> Picos isolados em padrão e feedback úteis; converter em rotina visível.</div></div>
+      <div class="dis-row"><div class="dis-who">Cid Calheiros</div><div class="dis-what"><strong>Suporte em emergência e disponibilidade.</strong> Bloco mais alto; canalizar a disponibilidade para situações que justifiquem o estilo reativo.</div></div>
+    </div>
+    <div class="foot"><div>Cada sócio · uma área-âncora</div><div>Comparativo</div></div>
+  </div></section>`,
+  // Final — REMOVIDO
+];
+
+document.getElementById('stage').innerHTML = slides.join('\n');
+</script>
+
+<style>
+.matrix { width: 100%; border-collapse: collapse; flex: 1; margin-top: 12px; }
+.matrix th { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; text-align: left; padding: 10px 12px; color: var(--ink-mute); border-bottom: 1px solid var(--rule); font-weight: 500; vertical-align: bottom; }
+.matrix tbody th { font-family: var(--serif); font-size: 18px; color: var(--ink); font-weight: 500; text-transform: none; letter-spacing: 0; padding: 14px 12px; border-bottom: 1px solid var(--rule-soft); }
+.matrix td { padding: 14px 12px; font-family: var(--mono); font-size: 15px; text-align: center; border-bottom: 1px solid var(--rule-soft); color: var(--ink-mute); }
+.matrix td.overall { font-family: var(--serif); font-size: 22px; color: var(--ink); }
+.matrix td.good span, .matrix td.good { color: var(--ink); font-weight: 700; }
+.matrix td.neutral span, .matrix td.neutral { color: var(--ink-soft); font-weight: 500; }
+.matrix td.warn span, .matrix td.warn { color: var(--ink-mute); font-weight: 500; }
+.matrix td.bad span, .matrix td.bad { color: var(--ink-faint); font-weight: 500; }
+.matrix td.arch { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); text-align: left; font-style: italic; }
+
+.ranking { display: flex; flex-direction: column; gap: 0; flex: 1; margin-top: 16px; border-top: 1px solid var(--rule); }
+.rank-row { display: grid; grid-template-columns: 56px 220px 1fr 360px 60px 220px; align-items: center; gap: 24px; padding: 18px 0; border-bottom: 1px solid var(--rule-soft); }
+.r-pos { font-family: var(--mono); font-size: 13px; color: var(--ink-mute); letter-spacing: 0.12em; }
+.r-name { font-family: var(--serif); font-size: 24px; color: var(--ink); }
+.r-arch { font-size: 16px; color: var(--ink-soft); font-style: italic; }
+.r-bar { position: relative; height: 8px; background: var(--rule-soft); overflow: hidden; }
+.r-fill { display: block; height: 100%; background: var(--ink); }
+.r-fill.good { background: var(--ink); }
+.r-fill.neutral { background: var(--ink-soft); }
+.r-fill.warn { background: var(--ink-mute); }
+.r-fill.bad { background: var(--ink-faint); }
+.r-val { font-family: var(--serif); font-size: 26px; text-align: right; color: var(--ink); }
+.r-val.warn, .r-val.bad { color: var(--ink-mute); }
+
+.verdict { font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; padding: 4px 10px; border: 1px solid var(--rule); color: var(--ink-soft); display: inline-block; }
+.verdict.good { border-color: var(--ink); color: var(--ink); background: rgba(12,12,13,0.04); }
+.verdict.neutral { border-color: var(--rule); color: var(--ink-soft); }
+.verdict.warn { border-color: var(--rule); color: var(--ink-mute); }
+.verdict.bad { border-color: var(--rule-soft); color: var(--ink-faint); }
+.slide.dark .verdict { border-color: rgba(245,245,244,0.3); color: rgba(245,245,244,0.85); }
+
+.arch-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; flex: 1; border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
+.arch-card { padding: 22px 24px; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); display: flex; flex-direction: column; }
+.arch-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.arch-head .num { font-family: var(--serif); font-size: 32px; color: var(--ink); }
+.arch-card h3 { font-family: var(--serif); font-size: 22px; margin: 0 0 6px; font-weight: 500; }
+.arch-tag { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); margin: 0 0 10px; }
+.arch-desc { font-size: 14px; color: var(--ink-soft); line-height: 1.35; margin: 0 0 16px; flex: 1; }
+.arch-foot { font-size: 12px; color: var(--ink-mute); display: flex; flex-direction: column; gap: 4px; padding-top: 10px; border-top: 1px solid var(--rule-soft); }
+.arch-foot div { display: flex; justify-content: space-between; gap: 12px; }
+.arch-foot .lbl { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mute); }
+.arch-foot .val { font-family: var(--mono); font-size: 11px; color: var(--ink); }
+
+.pair-grid, .conflict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; flex: 1; border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
+.pair-card, .conf-card { padding: 24px 28px; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.pair-card .body, .conf-card .body { margin-bottom: 10px; }
+
+.distrib { display: flex; flex-direction: column; flex: 1; border-top: 1px solid var(--rule); margin-top: 12px; }
+.dis-row { display: grid; grid-template-columns: 240px 1fr; gap: 32px; padding: 14px 0; border-bottom: 1px solid var(--rule-soft); }
+.dis-who { font-family: var(--serif); font-size: 22px; color: var(--ink); }
+.dis-what { font-size: 17px; line-height: 1.4; color: var(--ink-soft); }
+</style>
+
+<script src="assets/deck-stage.js"></script>
+</body>
+</html>
